@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height:100%;
+}
+
+body {
+    font-family: "Public Sans" , sans-serif;
+    font-size: 1.2rem;
+    min-height:100%;
+}
+
+.grid-container > * {
+    padding: 10px;
+    text-align: center;
+
+}
+
+/* cabecera*/
+.header{
+    grid-area: header;
+    background-color: red;
+    color: white;
+    justify-content: space-between; /*espaciar*/
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.nav1 ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav1 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+
+
+.header .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.nav1 img {
+    width: 50px; 
+    height: 45px; 
+    display: flex;
+    float: left;
+    margin-right: 10px; 
+
+}
+
+
+
+/*barra izquierda*/
+
+.navbar{
+    grid-area: navbar;
+    background-color: red;
+    justify-content: space-between;
+    display: flex;
+    align-items: normal;
+}
+
+.nav2 ul {
+    list-style: none;
+    display: table-row;
+    gap: 15px;
+}
+
+.nav2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+
+
+.navbar img {
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    float: left;
+    margin-right: 15px; 
+
+}
+
+
+/* centro*/
+
+.main {
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    padding: 4px; 
+}
+
+.grid-main {
+    display: grid;
+    gap: 10px; /* espacio entre cajas */
+    width: 100%;
+    height: 100%;
+    grid-template-rows: auto auto auto auto; /* 4 filas automáticas */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+}
+
+
+
+.grid-main > div {
+    position: relative;      
+    background-color: #ffdbdb;
+    border-radius: 10px;
+    overflow: hidden;       
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #070707;
+}
+
+
+.grid-main img {
+    position: absolute;     
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    object-position: center;
+}
+
+.box1 {
+    grid-column: 1 / 2; /* modificar la primera columna */
+    grid-row: 1 / 3 ;
+
+}
+
+
+.box2 {
+    grid-column: 2 / 3; /* modificar segunda columna */
+    grid-row: 1;
+}
+
+.box3 {
+    grid-column: 3 / 4; /* modificar tercera columna */
+    grid-row: 1;
+}
+
+.box4 {
+    grid-column: 2 / 4; /* modificar la 3 columna */
+    grid-row: 2;
+}
+
+.box5 {
+    grid-column: 1 / 2; /* modificar primera columna */
+    grid-row: 3;
+}
+
+.box6 {
+    grid-column: 2 / 3; /* modificar segunda columna */
+    grid-row: 3;
+}
+
+.box7 {
+    grid-column: 3 / 4; /* modificar tercera columna */
+    grid-row: 3 / 5;
+}
+.box8 {
+    grid-column: 1 / 3; /* modificar cuarta columna */
+    grid-row: 4;
+}
+
+.box9 {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    display: flex;      
+    flex-direction: column; 
+    width: 100%;        
+    height: 100%;        
+}
+
+
+/* barra derecha*/
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: #ffffff;
+    
+}
+
+.box {
+    margin: 5px;                  
+    padding: 10px;               
+    background-color:#e3e2e2;  
+    padding-top: auto;
+    height: 100px;
+    width: 280px;
+    
+}
+
+img {
+    width: 75px; 
+    height: 75px; 
+    display: flex;
+    float: left;
+    margin-right: 15px; 
+
+}
+
+h4{
+    font-size: 1rem;
+    text-align: left; 
+
+}
+
+p{
+    font-size: 0.9rem;
+    text-align: center; 
+
+}
+
+
+/*pie*/
+.footer{
+    grid-area: footer;
+    background-color:#e60012;
+}
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Agrega una transición suave para los efectos */
+}
+/* Estilos para hover: resalta el enlace al pasar el mouse */
+.footer ul li a:hover {
+    color: #ffff00; /* Amarillo claro para resaltar */
+    text-decoration: underline; /* Subrayado para indicar interactividad */
+}
+/* Estilos para active: efecto al hacer clic */
+.footer ul li a:active {
+    color: #ffa500; /* Naranja para simular el "presionado" */
+}
+
+
+
+/* Banner de Cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e60012; /* Rojo del footer para coherencia */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    display: none; /* Oculto por defecto; se muestra con JS si no hay preferencia */
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9rem;
+}
+.cookie-banner p {
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+.cookie-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.cookie-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-accept {
+    background-color: #ffff00; /* Amarillo para resaltar aceptación */
+    color: #070707;
+}
+
+
+
+/* Modo oscuro */
+body.dark { background:#222; color:white; }
+body.dark .header, body.dark .navbar, body.dark .footer { background:#333; }
+body.dark .sidebar .box { background:#555; }
+
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* relación 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template: 
+    "header header header" 50px
+    "navbar main sidebar" auto
+    "footer footer footer" 75px /
+    75px auto 300px;
+}

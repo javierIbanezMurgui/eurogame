@@ -1,0 +1,6 @@
+# robots.txt para EuroGame
+
+User-agent: *
+Allow: /
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EuroGame: Noticias, tienda de videojuegos. Descubre nuestras novedades.">
+    <title>Formulario de registro</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="grid-container">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">EuroGame</a>
+        </div>
+        <nav class="nav1">
+            <ul>
+                <li><a href="#"><img src="images/buscar2.png" alt="buscar" title="buscar"></a></li>
+                <li><a href="index.html"><img src="images/inicio3.png" alt="paginaprincipal" title="pagina principal"></a></li>
+                <li><a href="#"><img src="images/iniciosesion.png" alt="inicio" title="inicio"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <nav class="navbar">
+        <nav class="nav2">
+            <ul>
+                <li><a href="https://store.nintendo.es/es/games/view-all-games"><img src="images/juegos2.png" alt="juegos" title="juegos">Juegos</a></li>
+                <li><a href="https://store.nintendo.es/es/consoles"><img src="images/hardware2.png" alt="hardware" title="hardware">Consola</a></li>
+                <li><a href="#"><img src="images/ayuda2.png" alt="ayuda" title="ayuda">Ayuda</a></li>
+                <li><a href="#"><img src="images/icons8-noticias-50.png" alt="noticias" title="noticias">Noticias</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <aside class="sidebar">
+        <div class="box">
+            <img src="images/frog_square.jpg" alt="rana" title="rana">
+            <h4>
+                Lorem ipsum dolor sit amet consectetur  
+            </h4>
+
+                <p class="texto2">Lorem ipsum dolor sit amet consectetur  </p>
+
+
+        </div>
+        <div class="box">
+            <img src="images/frog_square.jpg" alt="rana" title="rana">
+            <h4>
+                Lorem ipsum dolor sit amet consectetur  
+            </h4>
+
+                <p class="texto2">Lorem ipsum dolor sit amet consectetur  </p>
+    
+        </div>
+        <div class="box">
+            <img src="images/frog_square.jpg" alt="rana" title="rana">
+            <h4>
+                Lorem ipsum dolor sit amet consectetur  
+            </h4>
+
+                <p class="texto2">Lorem ipsum dolor sit amet consectetur  </p>
+
+    
+        </div>
+        <div class="box">
+            <img src="images/frog_square.jpg" alt="rana" title="rana">
+            <h4>
+                Lorem ipsum dolor sit amet consectetur  
+            </h4>
+
+                <p class="texto2">Lorem ipsum dolor sit amet consectetur  </p>
+        </div>
+        <div class="box">
+            <img src="images/frog_square.jpg" alt="rana" title="rana">
+            <h4>
+                Lorem ipsum dolor sit amet consectetur  
+            </h4>
+
+                <p class="texto2">Lorem ipsum dolor sit amet consectetur  </p>
+
+    
+        </div>
+    </aside>
+
+    <article class="main">
+        <div class="grid-main">
+            <div class="box9">
+                <form action="/action_page.php">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Javier..." required><br><br>
+        
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Ibañez..." required><br><br>
+        
+        <label for="telefono">Telefono:</label><br>
+        <input type="number" id="telefono" name="telefono" placeholder="654..." required><br><br>
+        
+        <label>Dirección</label><br>
+        <input type="text" id="calle" name="calle" placeholder="Calle"><br>
+        <input type="number" id="numero" name="numero" placeholder="Numero"><br>
+        <input type="text" id="localidad" name="localidad" placeholder="Localidad"><br>
+        <input type="number" id="codigo_postal" name="codigo_postal" placeholder="Codigo postal"><br>
+        <input type="text" id="provincia" name="provincia" placeholder="Provincia"><br><br>
+        <label for="pais">pais:</label><br>
+        <select id="pais" name="pais">
+            <option value="">Seleccione un país</option>
+            <option value="ES">España</option>
+            <option value="AL">Alemania</option>
+            <option value="FR">Francia</option>
+            <option value="IT">Italia</option>
+            <option value="HO">Holanda</option>
+            <option value="PT">Portugal</option>
+        </select><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="jim87@..." required><br><br>
+        
+        <label for="password">contraseña:</label><br>
+        <input type="password" id="password" name="password" placeholder="minimo 8 caracteres" minlength="8" required><br><br>
+        
+        <label>¿Cómo nos has conocido?</label><br>
+        <input type="radio" id="redes" name="seleccion" value="redes">
+            <label for="redes">Redes sociales</label><br>
+        <input type="radio" id="internet" name="seleccion" value="internet">
+            <label for="internet">Internet</label><br>
+        <input type="radio" id="amigo" name="seleccion" value="amigo">
+            <label for="amigo">Un amigo</label><br><br>
+
+        <input type="checkbox" id="terminos" name="terminos" value="terminos" required>
+            <label for="terminos"> Aceptar los Términos y condiciones de uso</label><br><br>
+
+        <input type="submit" value="Registarse">
+
+        <input type="reset" value="Borrar"><br>
+</form>
+            </div>
+        </div>
+    </article>
+
+
+    <footer class="footer">
+        <p> EuroGame. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="politica.html">Política de Privacidad</a></li>
+            <li><a href="terminos.html">Términos de Uso</a></li>
+        </ul>
+                        <button id="toggle-theme">Modo oscuro / claro</button>
+
+    </footer>
+
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>

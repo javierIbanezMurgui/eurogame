@@ -1,0 +1,9 @@
+Developer: Javier
+Rol: Estudiante DAW
+Contact: javibamur@alu.gva.es
+Site: https://tudominio.com
+
+/* SITE */
+Last update: 2025-11-12
+Standards: HTML5, CSS3
+
