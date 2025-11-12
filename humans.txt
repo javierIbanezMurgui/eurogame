@@ -1,9 +1,8 @@
 Developer: Javier
 Rol: Estudiante DAW
 Contact: javibamur@alu.gva.es
-Site: https://tudominio.com
+Sitio: https://javieribanezmurgui.github.io/eurogame/
 
 /* SITE */
-Last update: 2025-11-12
+Última actualización: 2025-11-11
 Standards: HTML5, CSS3
-
