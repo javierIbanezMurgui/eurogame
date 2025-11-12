@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-    // Toggle modo oscuro
+    // modo oscuro
     const toggle = document.getElementById("toggle-theme");
     if(toggle){
         toggle.addEventListener("click", function(){
