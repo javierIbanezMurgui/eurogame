@@ -207,7 +207,6 @@ body {
     margin: 5px;                  
     padding: 10px;               
     background-color:#e3e2e2;  
-    padding-top: auto;
     height: 100px;
     width: 280px;
     
@@ -321,3 +320,4 @@ body.dark .sidebar .box { background:#555; }
     "footer footer footer" 75px /
     75px auto 300px;
 }
+
